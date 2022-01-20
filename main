@@ -1,0 +1,16 @@
+import pygame
+import os
+
+from settings import *
+from player import *
+
+pygame.init()
+
+game_settings = Settings()
+screen = pygame.display.set_mode((game_settings.screen_width,game_settings.screen_height))
+pygame.display.set_caption("Digdug")
+while True:
+    player = Player(game_settings, screen)
+    player.draw()
+    pygame.display.flip()
+
