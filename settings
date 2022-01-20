@@ -1,0 +1,14 @@
+import pygame
+
+class Settings():
+    def __init__(self):
+        self.bg_color = (0,0,0)
+
+        winobject = pygame.display.Info()
+
+        self.screen_height = winobject.current_h
+
+        self.screen_width = winobject.current_w
+
+        self.player_size = 32
+        self.player_speed = 2
